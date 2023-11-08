@@ -7,3 +7,7 @@
 go build
 ./mdscli apply --file data/role-bindings.yml
 ```
+
+### Research
+
+* [Confluent Metadata API Reference](https://docs.confluent.io/platform/current/security/rbac/mds-api.html)

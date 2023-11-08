@@ -1,0 +1,13 @@
+role_bindings:
+  - principal: "user:alice"
+    role: "SystemAdmin"
+    kafka_cluster_id: "kafka-cluster"
+  - principal: "user:alice"
+    role: "ResourceOwner"
+    resource: "Topic:mystream"
+    kafka_cluster_id: "kafka-cluster"
+scope:
+  kafka_cluster_id: "kafka-cluster"
+  schema_registry_cluster_id: "schema-registry-cluster"
+  ksql_cluster_id: "ksql-cluster"
+  connect_cluster_id: "connect-cluster"

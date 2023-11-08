@@ -1,0 +1,14 @@
+GET https://localhost:8092/kafka/v3/clusters/
+Authorization: BASIC superUser:superUser
+
+###
+
+POST https://localhost:8092/security/1.0/principals/User:superUser/roles/SystemAdmin
+Authorization: BASIC superUser:superUser
+Content-Type: application/json
+
+{
+    "clusters": {
+        "kafka-cluster": "O-5IZ0lTQNmZpHMctM0kFA"
+    }
+}
